@@ -9,9 +9,13 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<packaging>pom</packaging>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
 	<modules>
-		<module>malcolm</module>
-		<module>jayne</module>
 		<module>river</module>
+		<module>jayne</module>
+		<module>malcolm</module>
 	</modules>
 </project>
