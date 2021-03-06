@@ -1,4 +1,4 @@
-package com.rlvstudio.inara.jayne.rs;
+package com.rvlstudio.inara.jayne.rs;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;
