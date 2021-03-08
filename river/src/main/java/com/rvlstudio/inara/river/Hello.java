@@ -15,11 +15,13 @@ public class Hello {
 		sworld = s.map(n -> String.format("Hello, %s", n));
 	}
 
-	public void world() {
+	public Stream<String> world() {
 		s.send("World");
+		return sworld;
 	}
 
-	public void world(String name) {
+	public Stream<String> world(String name) {
 		s.send(name);
+		return sworld;
 	}
 }

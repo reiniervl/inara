@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="new server">
+
+    <featureManager>
+        <feature>webProfile-8.0</feature>
+		<feature>ejb-3.2</feature>
+    </featureManager>
+
+    <!--
+    <keyStore password=""/> 
+    -->
+
+    <httpEndpoint id="defaultHttpEndpoint"
+                  httpPort="9080"
+                  httpsPort="9443" host="*" />
+
+    <!-- Default SSL configuration enables trust for default certificates from the Java runtime --> 
+    <ssl id="defaultSSLConfig" trustDefaultCerts="true" />
+    <applicationManager autoExpand="false"/>
+	<!-- <application id="sink-app" name="sink-app" type="war" location="/home/reinier/Projects/java/sink/target/sink-0.1.0.war" /> -->
+	<application type="ear" id="inara" name="inara" location="inara.ear" />
+</server>
